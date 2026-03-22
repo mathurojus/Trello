@@ -125,7 +125,7 @@ function renderOrganizationsPage() {
     app.innerHTML = `
         <div class="navbar">
             <div class="container navbar-content">
-                <span class="navbar-brand">📊 Trello Board</span>
+                <span class="navbar-brand"> Trello Board</span>
                 <div class="navbar-menu">
                     <button class="btn-logout" onclick="logout()">Logout</button>
                 </div>
@@ -203,7 +203,7 @@ function renderOrganizationDetailPage(organization) {
     app.innerHTML = `
         <div class="navbar">
             <div class="container navbar-content">
-                <span class="navbar-brand">📊 ${organization.title}</span>
+                <span class="navbar-brand"> ${organization.title}</span>
                 <div class="navbar-menu">
                     <a onclick="switchToOrganizations()">Organizations</a>
                     <button class="btn-logout" onclick="logout()">Logout</button>
@@ -357,7 +357,7 @@ function renderBoardDetailPage(boardId, issues) {
     app.innerHTML = `
         <div class="navbar">
             <div class="container navbar-content">
-                <span class="navbar-brand">📋 Board</span>
+                <span class="navbar-brand"> Board</span>
                 <div class="navbar-menu">
                     <a onclick="loadOrganizationDetail(${appState.currentOrgId})">Back to Organization</a>
                     <button class="btn-logout" onclick="logout()">Logout</button>
